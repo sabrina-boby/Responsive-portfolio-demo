@@ -1,0 +1,67 @@
+
+// navbar start
+.nav-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nav{
+    width: 80%;
+    // max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    h2{
+        font-family: roboto;
+        font-size: 34px;
+        font-weight: 700;
+        color: white;
+    }
+    .alink-btn{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        a{
+            font-family: roboto;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        button{
+            text-align: center;
+            padding: 15px 40px;
+            font-family: roboto;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            background-color: rgb(117, 78, 249);
+            color: white;
+            border: none;
+            border-radius: 30px;
+        }
+        .nav_menu{
+             display: none;
+        }
+    }
+}
+// navbar end
+
+@media (max-width:599px) {
+   
+    .nav{
+        .alink-btn{
+            a{
+                display: none;
+            }
+            button{
+                display: none;
+            }
+            .nav_menu{
+                display: block;
+           }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 60px 80px 60px;
+    box-shadow: 0 4px 8px 0 rgba(184, 181, 181, 0.2), 0 6px 20px 0 rgba(167, 167, 167, 0.19);
+
+    h3 {
+        margin-top: 40px;
+    }
+
+    p {
+        margin-top: 10px;
+        color: rgb(212, 210, 210);
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+
+    button {
+        margin-top: 80px;
+        background: rgb(117, 78, 249);
+        color: white;
+        padding: 10px 25px;
+        border: 1px rgb(117, 78, 249);
+        ;
+    }
+}

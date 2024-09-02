@@ -1,0 +1,117 @@
+.container{
+    .portfolio-container{
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        background-color: rgb(117, 78, 249);
+    }
+}
+.bg-text{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 30px auto;
+    p{
+        font-family: roboto;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+.bg-white-section{
+    background-color: white;
+    height: 40rem;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+}
+.main-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.follow-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+}
+.follow{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transform: rotate(90deg);
+    .follow-txt{
+        p{
+            text-transform: uppercase;
+            text-wrap: nowrap;
+            color: rgb(117, 78, 249);
+            font-family: roboto;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    hr{
+        width: 50px;
+        background-color: rgb(17, 12, 32);
+    }
+    .follow-icon{
+        display: flex;
+        gap: 20px;
+        img{
+            width: 14px;
+            height: 20px;
+            transform: rotate(-90deg);
+        }
+    }
+}
+@media(max-width:599px){
+    .container{
+        .portfolio-container{
+            grid-template-columns: 1fr;
+        }
+    }
+    .bg-text{
+        height: 18rem;
+        p{
+            display: none;
+        }
+    }
+    .bg-white-section{
+        height: fit-content;
+        grid-template-columns:1fr;
+    }
+    .main-section{
+        margin: 50px auto;
+    }
+    .follow-section{
+        align-items:normal;
+        max-width: 100%;
+        height: fit-content;
+    }
+    .follow{
+        width: fit-content;
+        height: fit-content;
+        transform: rotate(0deg);
+        margin: 10px auto;
+        .follow-txt{
+            p{
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        hr{
+            width: 20px;
+            height: 1px;
+        }
+        .follow-icon{
+            img{
+                width: 12px;
+                height: 16px;
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+
